@@ -30,12 +30,13 @@ hari=$(date +"%A")
 tnggl=$(date +"%d-%B-%Y")
 NAME=$(curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | grep $IPVPS | awk '{print $2}')
 EXP=$(curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | grep $IPVPS | awk '{print $3}')
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[0;35m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "    * IP VPS         : $IPVPS"
 echo -e "    * SERVER         : $ISP"
 echo -e "    * CLIENT NAME    : $NAME"
 echo -e "    * EXP     SCRIPT : $EXP"
-echo -e "    * SERVER NAME    : $DOMAIN"
+echo -e "\[\033[0;92m    * SERVER NAME    : $DOMAIN"
+echo -e "\e[0m                                                               "
 echo -e ""
 source /root/.ctech/banner
 banner
