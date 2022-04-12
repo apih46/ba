@@ -35,7 +35,7 @@ echo -e "    * IP VPS         : $IPVPS"
 echo -e "    * SERVER         : $ISP"
 echo -e "    * CLIENT NAME    : $NAME"
 echo -e "    * EXP     SCRIPT : $EXP"
-echo -e "\[\033[0;92m    * SERVER NAME    : $DOMAIN"
+echo -e "    * SERVER NAME    : \033[0;92m$DOMAIN"
 echo -e "\e[0m                                                               "
 echo -e ""
 source /root/.ctech/banner
