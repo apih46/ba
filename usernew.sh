@@ -66,3 +66,14 @@ echo -e ""
 echo -e ""
 echo -e ""
 echo -e ""
+read -p "        Press x or enter to back: " menu
+case $menu in
+x)
+exit
+menu
+;;
+*)
+menu
+;;
+esac
+
