@@ -57,4 +57,14 @@ echo -e ""
 echo -e ""
 echo -e ""
 echo -e ""
+read -p "Press enter to back: " menu
+case $menu in
+x)
+exit
+menu
+;;
+*)
+menu
+;;
+esac
 
