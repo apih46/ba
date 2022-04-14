@@ -18,7 +18,7 @@ sleep 20
 exit 0
 fi
 versi=$(cat /home/ver)
-if [[ $versi == 1.2 ]]; then
+if [[ $versi == 2.0 ]]; then
 echo "You Have The Latest Version"
 exit 0
 fi
