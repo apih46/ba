@@ -30,18 +30,20 @@ hari=$(date +"%A")
 tnggl=$(date +"%d-%B-%Y")
 NAME=$(curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | grep $IPVPS | awk '{print $2}')
 EXP=$(curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | grep $IPVPS | awk '{print $3}')
-echo -e "\033[0;35m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[0;91m━━━━━━\e[0;92m━━━━━━\e[0;93m━━━━━━\e[0;94m━━━━━━━━\e[0;95m━━━━━━━━\e[0;96m━━━━━━━━━━\033[0;97m━━━━━━━━━\e[0;92m━━━━━━━━━\033[0m" 
 echo -e "    * IP VPS         : $IPVPS"
 echo -e "    * SERVER         : $ISP"
 echo -e "    * CLIENT NAME    : $NAME"
 echo -e "    * EXP     SCRIPT : $EXP"
 echo -e "    * SERVER NAME    : \033[0;92m$DOMAIN"
-echo -e "\e[0m                                                               "
-echo -e ""
-source /root/.ctech/banner
-banner
-echo -e ""
-echo -e "\e[0m                                                               "
+echo -e "    * EXP     SCRIPT : \033[4;33m$EXP\e[0m" 
+echo -e "    * SERVER NAME    : \033[0;92m$DOMAIN"
+echo -e "\033[0;91m━━━━━━\e[0;92m━━━━━━\e[0;93m━━━━━━\e[0;94m━━━━━━━━\e[0;95m━━━━━━━━\e[0;96m━━━━━━━━━━\033[0;97m━━━━━━━━━\e[0;92m━━━━━━━━━\033[0m" 
+echo -e "\033[0;91m                      ╔╗──╔╗──╔╗─╔╦═╦═╦╗                                    " 
+echo -e "\033[0;91m                      ║║╔╦╣╠╦═╣╚╦╝║╬║║║║                                    " 
+echo -e "\033[0;91m                      ║╚╣║║═╣╬╚╗║╔╣╔╣║║║                                    " 
+echo -e "\033[0;91m                      ╚═╩═╩╩╩══╩═╝╚╝╚╩═╝                                    " 
+echo -e "\033[0;91m━━━━━━\e[0;92m━━━━━━\e[0;93m━━━━━━\e[0;94m━━━━━━━━\e[0;95m━━━━━━━━\e[0;96m━━━━━━━━━━\033[0;97m━━━━━━━━━\e[0;92m━━━━━━━━━\033[0m" 
 echo -e "\033[0;92m    * [1]\e[0m  : SSH & OVPN PANEL\e[0m"
 echo -e "\033[0;93m    * [2]\e[0m  : XRAY PANEL PANEL\e[0m"
 echo -e "\033[0;95m    * [3]\e[0m  : CREATE OPENVPN ACCOUNT\e[0m"
@@ -75,6 +77,7 @@ echo -e "\033[0;95m    * [31]\e[0m : Exit From VPS \e[0m"
 echo -e "\e[0m                                                               "
 echo -e ""
 read -p "        Select From Options [1-31 or x]: " menu
+echo -e "\033[0;91m━━━━━━\e[0;92m━━━━━━\e[0;93m━━━━━━\e[0;94m━━━━━━━━\e[0;95m━━━━━━━━\e[0;96m━━━━━━━━━━\033[0;97m━━━━━━━━━\e[0;92m━━━━━━━━━\033[0m" 
 echo -e ""
 case $menu in
 1)
