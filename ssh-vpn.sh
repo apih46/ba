@@ -266,6 +266,7 @@ wget -O add-host "https://raw.githubusercontent.com/apih46/ba/main/add-host.sh"
 wget -O add-host "https://raw.githubusercontent.com/apih46/ba/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/apih46/ba/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/apih46/ba/main/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/apih46/ba/main/update.sh"
 wget -O usernew "https://raw.githubusercontent.com/apih46/ba/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/apih46/ba/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/apih46/ba/main/hapus.sh"
@@ -311,6 +312,7 @@ wget -O menu-ssh "https://raw.githubusercontent.com/apih46/ba/main/menu-ssh.sh"
 wget -O menu-xray "https://raw.githubusercontent.com/apih46/ba/main/menu-xray.sh"
 chmod +x add-host
 chmod +x menu
+chmod +x update
 chmod +x usernew
 chmod +x trial
 chmod +x hapus
