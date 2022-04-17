@@ -30,6 +30,7 @@ hari=$(date +"%A")
 tnggl=$(date +"%d-%B-%Y")
 NAME=$(curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | grep $IPVPS | awk '{print $2}')
 EXP=$(curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | grep $IPVPS | awk '{print $3}')
+JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 echo -e "\033[0;31m━━━━━━━━━\e[0;93m━━━━━━━━━\e[0;92m━━━━━━━━━\e[0;96m━━━━━━━━━\e[0;94m━━━━━━━━━\e[0;95m━━━━━━━━━\e[0;31m━━━━━━━━━\033[0m"
 echo -e "    * IP VPS         : $IPVPS"
 echo -e "    * SERVER         : $ISP"
@@ -42,6 +43,9 @@ echo -e "\033[0;91m    ║║╔╦╣╠╦═╣╚╦╝║╬║║║║   
 echo -e "\033[0;91m    ║╚╣║║═╣╬╚╗║╔╣╔╣║║║       " 
 echo -e "\033[0;91m    ╚═╩═╩╩╩══╩═╝╚╝╚╩═╝       " 
 echo -e "\033[0;31m━━━━━━━━━\e[0;93m━━━━━━━━━\e[0;92m━━━━━━━━━\e[0;96m━━━━━━━━━\e[0;94m━━━━━━━━━\e[0;95m━━━━━━━━━\e[0;31m━━━━━━━━━\033[0m"
+echo -e ""
+echo -e "Total OpenVPN Account : $JUMLAH user"
+echo -e ""
 echo -e "\033[0;92m    * [1]\e[0m  : SSH & OVPN PANEL\e[0m"
 echo -e "\033[0;93m    * [2]\e[0m  : XRAY PANEL PANEL\e[0m"
 echo -e "\033[0;95m    * [0]\e[0m  : CREATE OPENVPN ACCOUNT\e[0m"
