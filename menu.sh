@@ -44,7 +44,7 @@ echo -e "\033[0;91m    ╚═╩═╩╩╩══╩═╝╚╝╚╩═╝   
 echo -e "\033[0;31m━━━━━━━━━\e[0;93m━━━━━━━━━\e[0;92m━━━━━━━━━\e[0;96m━━━━━━━━━\e[0;94m━━━━━━━━━\e[0;95m━━━━━━━━━\e[0;31m━━━━━━━━━\033[0m"
 echo -e "\033[0;92m    * [1]\e[0m  : SSH & OVPN PANEL\e[0m"
 echo -e "\033[0;93m    * [2]\e[0m  : XRAY PANEL PANEL\e[0m"
-echo -e "\033[0;95m    * [3]\e[0m  : CREATE OPENVPN ACCOUNT\e[0m"
+echo -e "\033[0;95m    * [0]\e[0m  : CREATE OPENVPN ACCOUNT\e[0m"
 echo -e "\033[0;96m    * [4]\e[0m  : TRIAL OPENVPN ACCOUNT\e[0m"
 echo -e "\033[0;94m    * [6]\e[0m  : SSR PANEL\e[0m"
 echo -e "\033[0;92m    * [7]\e[0m  : SHADOWSOCKS PANEL\e[0m"
@@ -83,7 +83,7 @@ menu-ssh
 2)
 menu-xray
 ;;
-3)
+0)
 usernew
 ;;
 4)
