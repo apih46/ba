@@ -29,6 +29,7 @@ ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+DOMAIN=$(cat /etc/v2ray/domain)
 sleep 1
 echo Ping Host
 echo Cek Hak Akses...
@@ -59,7 +60,7 @@ echo -e "Password       : $Pass"
 echo -e "Expired On     : $exp"
 echo -e "==============================="
 echo -e ""
-echo -e "     Script Mod by LukaVPN"
+echo -e "SERVER VPN    : $DOMAIN"
 echo -e ""
 echo -e ""
 echo -e ""
@@ -67,7 +68,7 @@ echo -e ""
 echo -e ""
 echo -e ""
 echo -e ""
-read -p "Press enter to back: " menu
+read -p "Press ENTER to back " menu
 case $menu in
 x)
 exit
