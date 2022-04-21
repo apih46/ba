@@ -25,36 +25,6 @@ fi
 echo "Start Update"
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/apih46/ba/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/apih46/ba/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/apih46/ba/main/trial.sh"
-wget -O change-port "https://raw.githubusercontent.com/apih46/ba/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/apih46/ba/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/apih46/ba/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/apih46/ba/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/apih46/ba/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/apih46/ba/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/apih46/ba/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/apih46/ba/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/apih46/ba/port-vless.sh"
-wget -O wbmn "https://raw.githubusercontent.com/apih46/ba/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/apih46/ba/xp.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/apih46/ba/limit-speed.sh"
-wget -O add-sstp "https://raw.githubusercontent.com/apih46/ba/add-sstp.sh"
-wget -O add-ws "https://raw.githubusercontent.com/apih46/ba/add-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/apih46/ba/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/apih46/ba/add-tr.sh"
-chmod +x change-port
-chmod +x port-ovpn
-chmod +x port-ssl
-chmod +x port-wg
-chmod +x port-sstp
-chmod +x port-tr
-chmod +x port-squid
-chmod +x port-ws
-chmod +x port-vless
-chmod +x wbmn
-chmod +x xp
-chmod +x limit-speed
 echo "0 5 * * * root clear-log && reboot" > /etc/crontab
 echo "0 0 * * * root xp" > /etc/crontab
 cd
