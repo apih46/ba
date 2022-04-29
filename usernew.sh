@@ -70,15 +70,12 @@ echo -e ""
 echo -e ""
 read -p "Press ENTER to back " menu
 case $menu in
+e) 
 exit
 menu
 ;;
 *)
 menu
-;;
-x)
-exit
-exit
 ;;
 esac
 
