@@ -62,6 +62,10 @@ echo -e "==============================="
 echo -e ""
 echo -e "SERVER VPN    : $DOMAIN"
 echo -e ""
+echo -e "NO MULTILOGIN"
+echo -e "TAK BOLEH LOGIN ID DALAM 2 DEVICES SEKALIGUS"
+echo -e ""
+echo -e ""
 echo -e ""
 echo -e ""
 echo -e ""
@@ -70,12 +74,15 @@ echo -e ""
 echo -e ""
 read -p "Press ENTER to back " menu
 case $menu in
-e) 
 exit
 menu
 ;;
 *)
 menu
+;;
+x)
+exit
+exit
 ;;
 esac
 
