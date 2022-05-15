@@ -82,7 +82,6 @@ menu
 ;;
 x)
 exit
-exit
 ;;
 esac
 
