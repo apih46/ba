@@ -74,9 +74,6 @@ echo -e ""
 echo -e ""
 read -p "Press ENTER to back " menu
 case $menu in
-exit
-menu
-;;
 *)
 menu
 ;;
