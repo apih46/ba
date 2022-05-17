@@ -24,6 +24,7 @@ if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
 else
 domain=$IP
+IPVPS=$(curl -s ipinfo.io/ip )
 fi
 
 # // Vless
@@ -69,6 +70,7 @@ systemctl restart xray-mini@vless-splice
 clear
 echo -e ""
 echo -e "==========-XRAYS/VLESS-=========="
+echo -e "IP VPS         : $IPVPS"
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "Port Direct    : $vless1"
