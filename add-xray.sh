@@ -85,3 +85,18 @@ echo -e "================================="
 echo -e "Gantikan dengan BUG anda"
 echo -e "================================="
 echo -e "Expired On     : $exp"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+read -p "Press ENTER to back " menu
+case $menu in
+*)
+menu
+;;
+x)
+exit
+;;
+esac
