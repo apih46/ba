@@ -109,6 +109,8 @@ echo '        Installing Websocket '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
+wget -q -O /usr/bin/installbot "https://raw.githubusercontent.com/apih46/pol/main/bot_panel/installer.sh" && chmod +x /usr/bin/installbot
+wget -q -O /usr/bin/bbt "https://raw.githubusercontent.com/apih46/pol/main/bot_panel/bbt.sh" && chmod +x /usr/bin/bbt
 mkdir /root/.ctech
 curl https://raw.githubusercontent.com/syfqsamvpn/digi/main/banner >/root/.ctech/banner
 echo "LukaVPN" >/root/.ctech/name
