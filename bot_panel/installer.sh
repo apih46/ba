@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/apih46/pol/main/skkkk > /root/tmp
+    curl -sS https://raw.githubusercontent.com/apih46/ba/main/skkkk > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/apih46/pol/main/skkkk | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/apih46/ba/main/skkkk | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/apih46/pol/main/skkkk | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/apih46/ba/main/skkkk | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -65,7 +65,7 @@ exit 0
 fi
 
 ipes=$(curl -sS ipv4.icanhazip.com)
-surat=$(curl -sS https://raw.githubusercontent.com/apih46/pol/main/authbot | grep -w $ipes | awk '{print $4}'  )
+surat=$(curl -sS https://raw.githubusercontent.com/apih46/ba/main/authbot | grep -w $ipes | awk '{print $4}'  )
 if [[ "$surat" = "true" ]]; then
 echo -ne
 else
