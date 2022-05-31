@@ -8,6 +8,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 Lite script
 
 ```html
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/apih46/ba/main/setuplite.sh && chmod +x setuplite.sh && sed -i -e 's/\r$//' setuplite.sh && screen -S setup ./setup.sh
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/apih46/ba/main/setuplite.sh && chmod +x setuplite.sh && sed -i -e 's/\r$//' setuplite.sh && screen -S setuplite ./setuplite.sh
 ```
 
