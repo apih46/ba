@@ -83,9 +83,6 @@ echo '        Installing V2RAY '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 echo '============================================='
-echo '        Installing ipsec '
-echo '============================================='
-wget https://raw.githubusercontent.com/apih46/ba/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 echo '        Installing XRAY '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/install-xray.sh && chmod +x install-xray.sh && screen -S v2ray ./install-xray.sh
@@ -94,11 +91,9 @@ mkdir /root/.ctech
 curl https://raw.githubusercontent.com/syfqsamvpn/digi/main/banner >/root/.ctech/banner
 echo "LukaVPN" >/root/.ctech/name
 
-
 rm -f /root/ssh-vpn.sh
 rm -f /root/ins-vt.sh
 rm -f /root/install-xray.sh
-rm -f /root/ipsec.sh
 echo "1.1" > /home/ver
 
 echo "menu" >> .profile
