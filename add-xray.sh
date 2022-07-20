@@ -52,9 +52,9 @@ sed -i '/#XRay$/a\### '"$user $exp"'\
 sed -i '/#XRay$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","flow": "xtls-rprx-splice","email": "'""$user""'"' /etc/xray-mini/vless-splice.json
 
-vless_direct="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-direct&sni=dns.google.vault21.digi.com.my / ulist.com.my#$user"
-vless_splice="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-splice&sni=dns.google.vault21.digi.com.my / ulist.com.my#$user"
-
+vless_direct="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-direct&sni=#$user"
+vless_splice="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-splice&sni=#$user"
+vless_direct="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-direct&sni=#$user"
 # // Restarting Service
 systemctl stop xray-mini@vless-direct
 systemctl stop xray-mini@vless-splice
