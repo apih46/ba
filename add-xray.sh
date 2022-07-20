@@ -53,8 +53,9 @@ sed -i '/#XRay$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","flow": "xtls-rprx-splice","email": "'""$user""'"' /etc/xray-mini/vless-splice.json
 
 vless_direct="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-direct&sni=#$user"
+vless_digi="vless://${uuid}@ssl.google-analytics.com.api.digi.com.my.${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-direct&sni=ssl.google-analytics.com.api.digi.com.my#$user"
+vless_umobile="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-direct&sni=wap.u.com.my#$user"
 vless_splice="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-splice&sni=#$user"
-vless_direct="vless://${uuid}@${domain}:${vless1}?security=xtls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-direct&sni=#$user"
 # // Restarting Service
 systemctl stop xray-mini@vless-direct
 systemctl stop xray-mini@vless-splice
@@ -80,9 +81,9 @@ echo -e "path           : /xray"
 echo -e "================================="
 echo -e "Link Direct    : ${vless_direct}"
 echo -e "================================="
-echo -e "LInk Splice    : ${vless_splice}"
+echo -e "Link Digi      : ${vless_digi}"
 echo -e "================================="
-echo -e "Gantikan dengan BUG anda"
+echo -e "Link Umobile   : ${vless_umobile}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
 echo -e ""
