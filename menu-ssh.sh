@@ -29,7 +29,7 @@ echo -e "\033[0;34m    * [2]\e[0m  \e[1;32m: Generate SSH & OpenVPN Trial Accoun
 echo -e "\033[0;34m    * [3]\e[0m  \e[1;32m: Extending SSH & OpenVPN Account Active Life\e[0m"
 echo -e "\033[0;34m    * [4]\e[0m  \e[1;32m: Delete SSH & OpenVPN Account\e[0m"
 echo -e "\033[0;34m    * [5]\e[0m  \e[1;32m: Check User Login SSH & OpenVPN\e[0m"
-echo -e "\033[0;34m    * [6]\e[0m  \e[1;32m: Daftar Member SSH & OpenVPN\e[0m"
+echo -e "\033[0;34m    * [6]\e[0m  \e[1;32m: List User SSH & OpenVPN\e[0m"
 echo -e "\033[0;34m    * [7]\e[0m  \e[1;32m: Delete User Expired SSH & OpenVPN\e[0m"
 echo -e "\033[0;34m    * [8]\e[0m  \e[1;32m: Set up Autokill SSH\e[0m"
 echo -e "\033[0;34m    * [9]\e[0m  \e[1;32m: Displays Users Who Do Multi Login SSH\e[0m"
