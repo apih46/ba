@@ -49,7 +49,7 @@ echo -e ""
 echo -e "\033[0;92m    [1]\e[0m  SSH & OVPN PANEL\e[0m       \033[0;94m    [15]\e[0m Change Subdomain Host\e[0m" 
 echo -e " \033[0;93m   [2]\e[0m  XRAY PANEL PANEL\e[0m       \033[0;95m    [16]\e[0m Renew Certificate \e[0m" 
 echo -e "\033[0;95m    [0]\e[0m  CREATE OPENVPN ACCOUNT\e[0m    \033[0;96m [17]\e[0m Change Port\e[0m" 
-echo -e "\033[0;96m    [4]\e[0m  TRIAL OPENVPN ACCOUNT\e[0m  \033[0;92m    [18]\e[0m Autobackup Data VPS\e[0m"
+echo -e "\033[0;96m    [4]\e[0m  ADD XRAY VLESS       \e[0m  \033[0;92m    [18]\e[0m Autobackup Data VPS\e[0m"
 echo -e "\033[0;94m    [6]\e[0m  SSR PANEL\e[0m        \033[0;93m          [19]\e[0m Backup Data VPS\e[0m"
 echo -e "\033[0;92m    [7]\e[0m  SHADOWSOCKS PANEL\e[0m      \033[0;94m    [20]\e[0m Restore Data VPS\e[0m" 
 echo -e "\033[0;93m    [8]\e[0m  VMESS PANEL\e[0m       \033[0;95m         [21]\e[0m Webmin Menu\e[0m" 
@@ -73,7 +73,7 @@ menu-xray
 usernew
 ;;
 4)
-trial
+addxray
 ;;
 6)
 menu-ssr
