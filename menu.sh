@@ -73,7 +73,7 @@ menu-xray
 usernew
 ;;
 4)
-addxray
+add-xray
 ;;
 6)
 menu-ssr
