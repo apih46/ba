@@ -63,14 +63,14 @@ cat>/etc/v2ray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "162.159.134.61",
       "port": "${none}",
       "id": "${uuid}",
-      "aid": "2",
+      "aid": "0",
       "net": "ws",
       "path": "/v2ray",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "none"
 }
 EOF
@@ -86,6 +86,8 @@ echo -e ""
 echo -e "==========-V2RAY/VMESS-=========="
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
+echo -e "Expired On     : $exp"
+echo -e "================================="
 echo -e "port TLS       : ${tls}"
 echo -e "port none TLS  : ${none}"
 echo -e "id             : ${uuid}"
@@ -96,6 +98,6 @@ echo -e "path           : /v2ray"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
-echo -e "link none TLS  : ${vmesslink2}"
+echo -e "Digi Booster   : ${vmesslink2}"
 echo -e "================================="
-echo -e "Expired On     : $exp"
+
