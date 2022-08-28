@@ -59,6 +59,7 @@ echo -e "\033[0;95m    [11]\e[0m VLESS GRPC PANEL\e[0m         \033[0;93m  [25]\
 echo -e "\033[0;96m    [12]\e[0m WIREGUARD\e[0m          \033[0;94m        [26]\e[0m Speedtest VPS\e[0m" 
 echo -e "\033[0;92m    [13]\e[0m TROJAN PANEL\e[0m         \033[0;95m      [27]\e[0m Update To Latest Script\e[0m" 
 echo -e "\033[0;93m    [14]\e[0m TROJAN GRPC PANEL\e[0m        \033[0;96m  [28]\e[0m System Information\e[0m" 
+echo -e "\033[0;93m    [99]\e[0m DIGI Booster\e[0m"
 echo -e ""
 read -p "        Select From Options [1-31 or x]: " menu
 echo -e ""
@@ -146,6 +147,9 @@ about
 ;;
 30)
 change-banner
+;;
+99)
+add-ws
 ;;
 31)
 exit
