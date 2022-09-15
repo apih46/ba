@@ -13,9 +13,8 @@ echo '                         Telegram                           '
 echo '                  Telegram LukaVPN @coxoox                 '
 echo ''
 echo ''
-echo '                       Tunggu 5 Saat!                       '
 echo ' .......................................................... '
-sleep 5
+sleep 1
 clear
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
@@ -175,6 +174,6 @@ echo '============================================='
 echo ""
 rm -f /root/setup.sh
 rm -f /root/.bash_history
-echo " Reboot 15 Sec, Setelah ON type menu"
-sleep 15
+echo " Reboot 5 Sec, Setelah ON type menu"
+sleep 5
 reboot
