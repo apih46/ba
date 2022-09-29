@@ -60,7 +60,7 @@ echo -e ""
 echo -e "SERVER VPN    : $DOMAIN"
 echo -e ""
 echo -e "**Cara-cara connect VPN** 👉 @lukaopenvpn" 
-echo -e "**Group support** 👉 @lukavpngroup
+echo -e "**Group support** 👉 @lukavpngroup" 
 echo -e "Terima kasih support sy 😊" 
 echo -e ""
 echo -e ""
