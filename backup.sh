@@ -100,7 +100,7 @@ sleep 1
 echo -e "[ ${green}INFO${NC} ] Processing updating server...... "
 Save_And_Exit
 fi
-link="https://raw.githubusercontent.com/syfqsamvpn/user-backup-db/main/$NameUser/$NameUser.zip"
+link="https://raw.githubusercontent.com/apih46/user-backup-db/main/$NameUser/$NameUser.zip"
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Backup done "
 sleep 1
