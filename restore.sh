@@ -23,7 +23,7 @@ cd
 MYIP=$(curl -sS ipv4.icanhazip.com)
 NameUser=$(curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | grep $MYIP | awk '{print $2}')
 
-cekdata=$(curl -sS https://raw.githubusercontent.com/syfqLukaVPN/user-backup-db/main/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
+cekdata=$(curl -sS https://raw.githubusercontent.com/apih46/user-backup-db/main/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
 
 [[ "$cekdata" = "404" ]] && {
 red "Data not found / you never backup"
@@ -36,7 +36,7 @@ echo -e "[ ${green}INFO${NC} ] • Restore Data..."
 read -rp "Password File: " -e InputPass
 echo -e "[ ${green}INFO${NC} ] • Downloading data.."
 [[ ! -d /root/backup ]] && mkdir -p /root/backup
-wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/syfqLukaVPN/user-backup-db/main/$NameUser/$NameUser.zip" &> /dev/null
+wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/apih46/user-backup-db/main/$NameUser/$NameUser.zip" &> /dev/null
 echo -e "[ ${green}INFO${NC} ] • Getting your data..."
 unzip -P $InputPass /root/backup/backup.zip &> /dev/null
 echo -e "[ ${green}INFO${NC} ] • Starting to restore data..."
