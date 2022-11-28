@@ -4,7 +4,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 IZIN=$( curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | awk '{print $4}' | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 clear
-echo -e "${green}Tahniah! Anda Dibenarkan menggunakan LukaVPN...${NC}"
+echo -e "${green}Tahniah! Anda Dibenarkan menggunakan SAMVPN...${NC}"
 else
 clear
 echo ""
@@ -12,8 +12,8 @@ rm -f setup.sh
 echo '                            ...                           '
 echo '        Anda Tidak Dibenarkan Menggunakan Script ini!     '
 echo '                            ...                           '
-echo '        SILA REGISTER IP ANDA DI BOT @LukaVpn_bot!     '
-echo '                        t.me/coxoox                      '
+echo '        SILA REGISTER IP ANDA DI BOT @ctechdidik_bot!     '
+echo '                        t.me/sam_sfx                      '
 sleep 20
 exit 0
 fi
@@ -85,7 +85,7 @@ Save_And_Exit () {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/apih46/user-backup-db
-    git push -f https://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@github.com/apih46/user-backup-db.git &> /dev/null
+    git push -f https://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@github.com/apih46/user-backup-db.git &> /dev/null
 }
 
 if [ ! -d "/root/user-backup/" ]; then
