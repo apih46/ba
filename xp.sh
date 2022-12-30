@@ -1,24 +1,5 @@
 #!/bin/bash
 
-MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl -sS https://raw.githubusercontent.com/apih46/ip/main/list | awk '{print $4}' | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-clear
-echo -e "${green}Tahniah! Anda Dibenarkan menggunakan LukaVPN...${NC}"
-else
-clear
-echo ""
-rm -f setup.sh
-echo '                            ...                           '
-echo '        Anda Tidak Dibenarkan Menggunakan Script ini!     '
-echo '                            ...                           '
-echo '        SILA REGISTER IP ANDA DI BOT @LukaVpn_bot!     '
-echo '                        t.me/coxoox                      '
-sleep 20
-exit 0
-fi
-clear
-
 data=( `cat /var/lib/premium-script/data-user-l2tp | grep '^###' | cut -d ' ' -f 2`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
@@ -168,3 +149,7 @@ fi
 done
 systemctl restart xray-mini@vless-direct
 systemctl restart xray-mini@vless-splice
+echo -n /var/log/v2ray/error.log
+echo -n /var/log/v2ray/access.log
+echo -n /var/log/xray/error.log
+echo -n /var/log/xray/access.log
