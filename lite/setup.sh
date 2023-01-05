@@ -13,8 +13,9 @@ echo '                         Telegram                           '
 echo '                  Telegram LukaVPN @coxoox                 '
 echo ''
 echo ''
+echo '                       Tunggu 5 Saat!                       '
 echo ' .......................................................... '
-sleep 1
+sleep 5
 clear
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
@@ -81,6 +82,18 @@ echo '        Installing SSTP '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 echo '============================================='
+echo '        Installing ssr '
+echo '============================================='
+wget https://raw.githubusercontent.com/apih46/ba/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+echo '============================================='
+echo '        Installing shadowsocksobfs '
+echo '============================================='
+wget https://raw.githubusercontent.com/apih46/ba/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+echo '============================================='
+echo '        Installing WIREGUARD '
+echo '============================================='
+wget https://raw.githubusercontent.com/apih46/ba/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+echo '============================================='
 echo '        Installing V2RAY '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
@@ -103,6 +116,9 @@ echo "LukaVPN" >/root/.ctech/name
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
+rm -f /root/wg.sh
+rm -f /root/ss.sh
+rm -f /root/ssr.sh
 rm -f /root/ins-vt.sh
 rm -f /root/install-xray.sh
 rm -f /root/ipsec.sh
@@ -174,6 +190,6 @@ echo '============================================='
 echo ""
 rm -f /root/setup.sh
 rm -f /root/.bash_history
-echo " Reboot 5 Sec, Setelah ON type menu"
-sleep 5
+echo " Reboot 15 Sec, Setelah ON type menu"
+sleep 15
 reboot
