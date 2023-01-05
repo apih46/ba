@@ -78,29 +78,11 @@ echo '        Installing SSH & OPENVPN '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 echo '============================================='
-echo '        Installing SSTP '
-echo '============================================='
-wget https://raw.githubusercontent.com/apih46/ba/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-echo '============================================='
-echo '        Installing ssr '
-echo '============================================='
-wget https://raw.githubusercontent.com/apih46/ba/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-echo '============================================='
-echo '        Installing shadowsocksobfs '
-echo '============================================='
-wget https://raw.githubusercontent.com/apih46/ba/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
-echo '============================================='
-echo '        Installing WIREGUARD '
-echo '============================================='
-wget https://raw.githubusercontent.com/apih46/ba/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 echo '============================================='
 echo '        Installing V2RAY '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 echo '============================================='
-echo '        Installing ipsec '
-echo '============================================='
-wget https://raw.githubusercontent.com/apih46/ba/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 echo '        Installing XRAY '
 echo '============================================='
 wget https://raw.githubusercontent.com/apih46/ba/main/install-xray.sh && chmod +x install-xray.sh && screen -S v2ray ./install-xray.sh
@@ -115,13 +97,8 @@ echo "LukaVPN" >/root/.ctech/name
 
 
 rm -f /root/ssh-vpn.sh
-rm -f /root/sstp.sh
-rm -f /root/wg.sh
-rm -f /root/ss.sh
-rm -f /root/ssr.sh
 rm -f /root/ins-vt.sh
 rm -f /root/install-xray.sh
-rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
 echo "1.1" > /home/ver
 
