@@ -76,7 +76,7 @@ clear
 echo '============================================='
 echo '        Installing SSH & OPENVPN '
 echo '============================================='
-wget https://raw.githubusercontent.com/apih46/ba/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/apih46/openvpn/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 echo '============================================='
 echo '============================================='
 echo '        Installing V2RAY '
